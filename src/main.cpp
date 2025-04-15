@@ -1,7 +1,6 @@
 #include <iostream>
 #include <sstream>
 #include <fstream>
-#include <fmt/ranges.h>
 #include "NaiveBayesUtils.h"
 
 int main() {
