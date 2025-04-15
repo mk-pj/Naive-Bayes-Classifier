@@ -9,12 +9,12 @@
 using std::string, std::unordered_set, std::vector, std::unordered_map;
 
 class NaiveBayesClassifier {
-public:
     int total_count;
     vector<string> headers;
     unordered_map<string, int> classes;
     unordered_map<string, unordered_set<string>> attribute_variations;
     unordered_map<string, unordered_map<string, int>> attribute_counts;
+public:
     explicit NaiveBayesClassifier(const string&);
     void train(const string&);
     string predict(const string&);
