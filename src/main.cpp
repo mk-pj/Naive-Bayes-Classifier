@@ -15,10 +15,6 @@ int main() {
     string to_classify;
     std::getline(input_stream, to_classify);
     classifier.predict(to_classify);
-    fmt::println("ROWS USED FOR TRAINING: {}", classifier.total_count);
-    fmt::println("CLASS COUNTS: {}", classifier.classes);
-    fmt::println("ATTRIBUTE VARIATIONS: {}", classifier.attribute_variations);
-    fmt::print("ATTRIBUTE COUNTS PER CLASS: \n{}\n", fmt::join(classifier.attribute_counts, "\n"));
     input.close();
     return 0;
 }
